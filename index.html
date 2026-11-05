@@ -5,27 +5,27 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>IdleGachi: raise, train and quest with your Gachimon</title>
 <meta name="description" content="IdleGachi is a pixel virtual-pet idle RPG. Hatch a Gachimon, care for it, train eight skills, evolve it through 52 forms and quest through ten zones to The Final Maw.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/assets/site.css">
-<link rel="manifest" href="/manifest.webmanifest" crossorigin="use-credentials">
+<link rel="preconnect" href="https://googleapis.com">
+<link rel="preconnect" href="https://gstatic.com" crossorigin>
+<link href="https://googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="manifest" href="manifest.webmanifest" crossorigin="use-credentials">
 <meta name="theme-color" content="#162f57">
-<link rel="icon" type="image/png" sizes="192x192" href="/icons/icon-192.png">
-<link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="IdleGachi">
-<script>if('serviceWorker' in navigator)addEventListener('load',()=>navigator.serviceWorker.register('/sw.js').catch(()=>{}))</script>
-<script src="/assets/install.js" defer></script>
+<script>if('serviceWorker' in navigator)addEventListener('load',()=>navigator.serviceWorker.register('sw.js').catch(()=>{}))</script>
+<script src="assets/install.js" defer></script>
 </head>
 <body>
 <header class="cmd">
   <div class="wrap">
     <a class="logo" href="#top"><canvas width="15" height="15" data-mon="i1" aria-hidden="true"></canvas>IdleGachi</a>
     <nav aria-label="Sections">
-      <a href="#story">Story</a><a href="#screens">Screens</a><a href="#wiki">Wiki</a><a class="play" href="/play/">Play</a>
+      <a href="#story">Story</a><a href="#screens">Screens</a><a href="#wiki">Wiki</a><a class="play" href="play/">Play</a>
     </nav>
   </div>
 </header>
@@ -38,7 +38,7 @@
         <div class="sub">A pocket monster raising quest</div>
         <div class="win dlg" aria-live="polite"><p id="typer"></p><span class="more" aria-hidden="true">▼</span></div>
         <div class="btns">
-          <a class="btn" href="/play/">▶ New game</a>
+          <a class="btn" href="play/">▶ New game</a>
           <a class="btn alt" href="#wiki">Read the wiki</a>
         </div>
       </div>
@@ -104,9 +104,9 @@
   </section>
 </main>
 
-<footer><div class="wrap"><div class="win">THOU HAST REACHED THE END OF THE PAGE. <a href="/play/">Play IdleGachi ▶</a></div></div></footer>
+<footer><div class="wrap"><div class="win">THOU HAST REACHED THE END OF THE PAGE. <a href="play/">Play IdleGachi ▶</a></div></div></footer>
 
-<script src="/assets/gamedata.js"></script>
-<script src="/assets/site.js"></script>
+<script src="assets/gamedata.js"></script>
+<script src="assets/site.js"></script>
 </body>
 </html>
