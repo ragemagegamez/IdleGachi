@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>IdleGachi: raise, train and quest with your Gachimon</title>
+<meta name="description" content="IdleGachi is a pixel virtual-pet idle RPG. Hatch a Gachimon, care for it, train eight skills, evolve it through 52 forms and quest through ten zones to The Final Maw.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/site.css">
+<link rel="manifest" href="/manifest.webmanifest" crossorigin="use-credentials">
+<meta name="theme-color" content="#162f57">
+<link rel="icon" type="image/png" sizes="192x192" href="/icons/icon-192.png">
+<link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="IdleGachi">
+<script>if('serviceWorker' in navigator)addEventListener('load',()=>navigator.serviceWorker.register('/sw.js').catch(()=>{}))</script>
+<script src="/assets/install.js" defer></script>
+</head>
+<body>
+<header class="cmd">
+  <div class="wrap">
+    <a class="logo" href="#top"><canvas width="15" height="15" data-mon="i1" aria-hidden="true"></canvas>IdleGachi</a>
+    <nav aria-label="Sections">
+      <a href="#story">Story</a><a href="#screens">Screens</a><a href="#wiki">Wiki</a><a class="play" href="/play/">Play</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <h1>IDLEGACHI</h1>
+        <div class="sub">A pocket monster raising quest</div>
+        <div class="win dlg" aria-live="polite"><p id="typer"></p><span class="more" aria-hidden="true">▼</span></div>
+        <div class="btns">
+          <a class="btn" href="/play/">▶ New game</a>
+          <a class="btn alt" href="#wiki">Read the wiki</a>
+        </div>
+      </div>
+      <div class="win stage"><canvas id="world" width="200" height="120" aria-label="A pixel overworld with your Gachimon wandering the fields"></canvas></div>
+    </div>
+  </section>
+
+  <section id="story">
+    <div class="wrap">
+      <div class="sh"><span class="num">01</span><h2>The game</h2></div>
+      <div class="about">
+        <div class="win blue">
+          <span class="tab">STORY</span>
+          <p>Forty years ago, an archaeologist unearthed a strange device. The moment he held it, visions of monsters and magical mysteries flooded his mind. Then the device flickered to life, and a tiny digital monster blinked up at him from its screen.</p>
+          <p>Back at the university, he shared his discovery with his colleagues. One of them grew jealous and stole the device. Alone in his lab, the thief took it apart and set out to build a copy. He succeeded, but his replica refused to work. Then, late one night, while tinkering with its insides, he nicked his finger. A single drop of blood fell into the machinery. The cogs and gears began to turn and spin in perfect sync, and the first <span class="hl">Gachivice</span> was born.</p>
+          <p>Over the next four decades, <b>IdleGachi</b>, the &ldquo;game&rdquo;, flooded the world&rsquo;s markets and became a worldwide phenomenon.</p>
+          <p>Your story begins on an ordinary day at the park, when you nicked your finger on a raspberry bush and your Gachivice drank in your life force. Your <span class="hl">Gachimon</span> came to life, and so did your story.</p>
+          <p>Now the <span class="hl">Gachiverse</span> needs saving, and it falls to you to take down <span class="hl">The Final Maw</span>: an Abyssal Demon born from the very blood of the thief at the university.</p>
+          <p>So go. Raise your Gachimon, and become the hero you were destined to be.</p>
+        </div>
+        <div class="feats">
+          <div class="win feat"><canvas width="16" height="16" data-ico="egg" aria-hidden="true"></canvas><div><b>Raise</b>Hatch, name and care for your partner. Watch for shinies.</div></div>
+          <div class="win feat"><canvas width="16" height="16" data-ico="pick" aria-hidden="true"></canvas><div><b>Train</b>Eight skills, 80+ resources and recipes that keep running while you're idle.</div></div>
+          <div class="win feat"><canvas width="16" height="16" data-ico="sword" aria-hidden="true"></canvas><div><b>Evolve</b>Five lines and 52 forms. Your training decides which branch you get.</div></div>
+          <div class="win feat"><canvas width="16" height="16" data-ico="crown" aria-hidden="true"></canvas><div><b>Conquer</b>Ten zones, ten bosses, friendly rival duels and live world events.</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="screens">
+    <div class="wrap">
+      <div class="sh"><span class="num">02</span><h2>Screenshots</h2></div>
+      <div class="shots">
+        <figure class="win shot" style="margin:0"><canvas id="sc-care" width="256" height="192" aria-label="The care screen on the Gachivice"></canvas>
+          <figcaption><h3>The Gachivice</h3><p>Your partner lives on the LCD. Keep its health and hunger up, put it to bed and clean up after it.</p></figcaption></figure>
+        <figure class="win shot" style="margin:0"><canvas id="sc-evo" width="256" height="192" aria-label="An evolution line from Embyte to Pyrodrake"></canvas>
+          <figcaption><h3>Evolution</h3><p>Embyte becomes Cinderpup, then Infernox, then Pyrodrake. Train other stats and the same egg takes a different path.</p></figcaption></figure>
+        <figure class="win shot" style="margin:0"><canvas id="sc-boss" width="256" height="192" aria-label="A boss battle against the Briar King"></canvas>
+          <figcaption><h3>Boss battles</h3><p>Every zone ends with a boss you fight yourself. Time your attacks and bring food and remedies.</p></figcaption></figure>
+        <figure class="win shot" style="margin:0"><canvas id="sc-skill" width="256" height="192" aria-label="The training screen listing skills"></canvas>
+          <figcaption><h3>Training</h3><p>Pick a skill and let it run. Raw resources become bars, planks, meals and potions for harder fights.</p></figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="wiki">
+    <div class="wrap">
+      <div class="sh"><span class="num">03</span><h2>Wiki</h2></div>
+      <div class="wiki">
+        <div class="win wmenu" role="tablist" aria-label="Wiki pages">
+          <button role="tab" data-w="dex" aria-selected="true">Gachimon</button>
+          <button role="tab" data-w="care" aria-selected="false">Care</button>
+          <button role="tab" data-w="stats" aria-selected="false">Stats</button>
+          <button role="tab" data-w="skills" aria-selected="false">Skills</button>
+          <button role="tab" data-w="zones" aria-selected="false">Zones</button>
+          <button role="tab" data-w="gacha" aria-selected="false">Gacha</button>
+          <button role="tab" data-w="traits" aria-selected="false">Traits</button>
+        </div>
+        <div class="win wpane" id="wpane" role="tabpanel"></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer><div class="wrap"><div class="win">THOU HAST REACHED THE END OF THE PAGE. <a href="/play/">Play IdleGachi ▶</a></div></div></footer>
+
+<script src="/assets/gamedata.js"></script>
+<script src="/assets/site.js"></script>
+</body>
+</html>
